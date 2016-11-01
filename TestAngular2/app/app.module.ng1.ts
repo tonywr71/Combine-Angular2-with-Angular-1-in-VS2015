@@ -1,3 +1,7 @@
+import { upgradeAdapter } from './upgradeAdapter';
+import { AppComponent } from './app.component';
+declare var angular: any;
+
 'use strict';
 
 // Define the `phonecatApp` module
@@ -7,4 +11,7 @@ angular.module('phonecatApp', [
   'core',
   'phoneDetail',
   'phoneList'
-]);
+]); 
+
+//angular.module("phonecatApp", [])
+//  .directive("myApp", upgradeAdapter.downgradeNg2Component(AppComponent));

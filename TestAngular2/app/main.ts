@@ -1,16 +1,17 @@
-import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+//import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
 import { UpgradeAdapter } from '@angular/upgrade';
 import { AppModule } from './app.module';
-
-let upgradeAdapter = new UpgradeAdapter(AppModule);
 
 //import components that need to be downgraded
 import { AppComponent } from './app.component';
 
-//declare var angular: any;
+declare var angular: any;
+
+let upgradeAdapter = new UpgradeAdapter(AppModule);
+
 //angular.module("phonecatApp", [])
 //  .directive("myApp", upgradeAdapter.downgradeNg2Component(AppComponent));
 
-upgradeAdapter.bootstrap(document.documentElement, ["phonecatApp"]);
+upgradeAdapter.bootstrap(document.body, ["phonecatApp"]);
 
-platformBrowserDynamic().bootstrapModule(AppModule);
+//platformBrowserDynamic().bootstrapModule(AppModule);

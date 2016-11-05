@@ -68,6 +68,7 @@
     <Reference Include="System.EnterpriseServices" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="app\ng1component.html" />
     <Content Include="package.json" />
     <Content Include="tsconfig.json" />
     <Content Include="app\img\.gitkeep" />
@@ -192,7 +193,7 @@
     <Content Include="app\img\phones\t-mobile-mytouch-4g.3.jpg" />
     <Content Include="app\img\phones\t-mobile-mytouch-4g.4.jpg" />
     <Content Include="app\img\phones\t-mobile-mytouch-4g.5.jpg" />
-    <Content Include="app\index.html" />
+    <TypeScriptCompile Include="app\ng1component.ts" />
     <TypeScriptCompile Include="app\phone-detail\phone-detail.component.ts" />
     <Content Include="app\phone-detail\phone-detail.component.spec.js" />
     <Content Include="app\phone-detail\phone-detail.module.js" />

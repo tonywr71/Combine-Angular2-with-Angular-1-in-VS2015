@@ -8,6 +8,4 @@ angular.module('phonecatApp', [
     'phoneDetail',
     'phoneList'
 ]);
-//angular.module("phonecatApp", [])
-//  .directive("myApp", upgradeAdapter.downgradeNg2Component(AppComponent)); 
 //# sourceMappingURL=app.module.ng1.js.map

@@ -1,11 +1,11 @@
 ﻿<!DOCTYPE html>
-<html>
+<html lang="en" >
   <head>
     <base href="/">
     <title>Angular QuickStart</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!--<link rel="stylesheet" href="styles.css">-->
+    <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css" />
     <link rel="stylesheet" href="/app/app.css" />
     <link rel="stylesheet" href="/app/app.animations.css" />
@@ -28,6 +28,7 @@
     <script src="/app/phone-list/phone-list.component.js"></script>
     <script src="/app/phone-detail/phone-detail.module.js"></script>
     <script src="/app/phone-detail/phone-detail.component.js"></script>
+    <script src="/app/ng1component.js"></script>
 
     <!--End Angular 1-->
 
@@ -47,8 +48,6 @@
   <body>
     <!--<my-app>Loading...</my-app>-->
 
-    <div class="view-container">
-      <div ng-view class="view-frame"></div>
-    </div>
+    <ng1component></ng1component>
   </body>
 </html>

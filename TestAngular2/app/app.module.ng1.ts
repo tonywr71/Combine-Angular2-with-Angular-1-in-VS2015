@@ -1,4 +1,3 @@
-import { upgradeAdapter } from './upgradeAdapter';
 import { AppComponent } from './app.component';
 declare var angular: any;
 
@@ -13,5 +12,3 @@ angular.module('phonecatApp', [
   'phoneList'
 ]); 
 
-//angular.module("phonecatApp", [])
-//  .directive("myApp", upgradeAdapter.downgradeNg2Component(AppComponent));

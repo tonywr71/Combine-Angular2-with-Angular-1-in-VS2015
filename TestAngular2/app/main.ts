@@ -1,14 +1,25 @@
-//import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+//Start Angular 1 working with Angular 2 components
 import { upgradeAdapter } from './upgradeAdapter';
+////import components that need to be downgraded
+import { AppComponent } from './app.component';
+declare var angular: any;
+//downgrade any angular 2 components so they can be used in angular 1
+angular.module("phonecatApp").directive("myApp", <angular.IDirectiveFactory>upgradeAdapter.downgradeNg2Component(AppComponent));
+upgradeAdapter.bootstrap(document.body, ["phonecatApp"]);
+//End Angular 1 working with Angular 2 components
+
+
+//import { platformBrowserDynamic } from '@angular/platform-browser-dynamic';
+//\import { upgradeAdapter } from './upgradeAdapter';
 //import { AppModule } from './app.module';
 
 ////import components that need to be downgraded
-import { AppComponent } from './app.component';
+//\import { AppComponent } from './app.component';
 
-declare var angular: any;
-angular.module("phonecatApp").directive("myApp", <angular.IDirectiveFactory>upgradeAdapter.downgradeNg2Component(AppComponent));
+//\declare var angular: any;
+//\angular.module("phonecatApp").directive("myApp", <angular.IDirectiveFactory>upgradeAdapter.downgradeNg2Component(AppComponent));
 
-upgradeAdapter.bootstrap(document.body, ["phonecatApp"]);
+//\upgradeAdapter.bootstrap(document.body, ["phonecatApp"]);
 
 //platformBrowserDynamic().bootstrapModule(AppModule);
 
